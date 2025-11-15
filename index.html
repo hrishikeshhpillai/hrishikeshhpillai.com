@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrishikesh H. Pillai</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="./src/app.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+    
+<nav class="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-4 sticky top-0 z-50 w-full bg-white">
+    <div class="flex justify-between items-baseline">
+        <div class="sm:text-xl md:text-2xl lg:text-[22px] font-bold text-gray-400 leading-none"><a href="#">Hrishikesh H Pillai</a></div> 
+        <div class="space-x-6 hidden sm:flex">
+            <a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">About</a>
+            <!-- <a href="blog/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Blog</a> -->
+            <a href="publications/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Publications</a>
+            <a href="talks/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Talks</a>
+            <a href="awards/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Awards</a>
+            <a href="projects/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Projects</a>
+            <a href="gallery/index.html" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Gallery</a>
+            <a href="#contact" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Contact</a>
+        </div>
+
+
+        <div id="menu-open-btn" class="space-y-1 lg:hidden cursor-pointer z-20 md:pl-96 sm:pl-32">
+            <div class="w-5 h-0.5 bg-black"></div>
+            <div class="w-5 h-0.5 bg-black"></div>
+            <div class="w-5 h-0.5 bg-black"></div>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[100] p-4">
+    <div class="flex flex-col h-full">
+
+        <div class="flex justify-end pb-4">
+            <button id="menu-close-btn" class="text-gray-600 hover:text-gray-900 transition duration-300 focus:outline-none cursor-pointer" aria-label="Close menu">
+                <svg class="w-7 h-7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+
+        <nav class="flex flex-col flex-grow items-center justify-center">
+            <a href="index.html#about" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">About</a>
+            <a href="publications/index.html" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Publications</a>
+            <a href="talks/index.html" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Talks</a>
+            <a href="awards/index.html" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Awards</a>
+            <a href="projects/index.html" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Projects</a>
+            <a href="gallery/index.html" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Gallery</a>
+            <a href="index.html#contact" class="mobile-menu-link block w-full max-w-xs text-center text-xl font-medium text-gray-700 hover:text-gray-900 py-4 border-b border-gray-200 transition duration-300">Contact</a>
+        </nav>
+    </div>
+</div>
+
+<hr class="border-gray-100">
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <section id="hero" class="min-h-fit md:min-h-[calc(100vh-100px)] flex items-center py-1 md:pt-10 md:pb-20"> 
+            
+            <div class="max-w-4xl mx-auto w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-16 items-center">
+                    
+                    <div class="order-1 md:order-2 flex justify-center md:justify-end pb-0 md:pb-0"> 
+                        <div class="w-full max-w-md aspect-square flex items-center justify-center">
+                            <img src="images/home/hrishi_main.png" alt="Hrishikesh H Pillai" class="max-h-[250px] md:max-h-[400px] w-auto h-auto"> 
+                        </div>
+                    </div>
+                    
+                    <div class="order-2 md:order-1 text-left py-0 md:py-0"> 
+                        <h1 class="text-3xl sm:text-4xl lg:text-[1.375rem] font-semibold text-gray-900 mb-1 leading-tight">
+                            Hi, I'm Hrishikesh H. Pillai
+                        </h1>
+                        <p class="text-sm sm:text-base text-gray-700 mb-0.5 max-w-lg pt-2">
+                            I'm a <strong class="font-medium">Junior Research Fellow</strong> at LEAP Lab, IISc Bangalore, working under <strong><a href="http://leap.ee.iisc.ac.in/sriram/" class="text-purple-700">Prof. Sriram Ganapathy</a></strong>
+                        </p>
+                        <p class="text-sm sm:text-base text-gray-700 mb-3 max-w-lg pt-2">
+                            My current research focuses on  <strong><a href="" class="text-purple-700">representation learning for speech and audio signals</a></strong>, and building and <strong> <a href="" class="text-purple-700">pre-training</a></strong> audio language models.
+                        </p>
+
+                        <p class="text-sm sm:text-base text-gray-700 mb-3 max-w-lg pt-2">
+                            I have also worked on <strong> <a href="" class="text-purple-700">smartgrids</a>, <a href="" class="text-purple-700">bio-signal processing</a>, <a href="" class="text-purple-700">robotics</a>,<a href="" class="text-purple-700"> IoT</a> </strong> and more. Check out some of my cool projects here
+                        </p>
+
+                        <div class="flex flex-row justify-left items-center pt-3">
+                            <a href="https://scholar.google.com/citations?user=LXN1-RwAAAAJ&hl=en&oi=ao" class="">
+                                <img src="images/icons/google-scholar.png" class="w-1/2" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/hrishikeshhpillai/" class="">
+                                <img src="images/icons/linkedin.png" class="w-1/2" alt="">
+                            </a>
+                            <a href="https://github.com/hrishikeshhpillai" class="">
+                                <img src="images/icons/github.png" class="w-1/2" alt="">
+                            </a>
+                            <a href="mailto:mail2hrishikeshhpillai@gmail.com" class="">
+                                <img src="images/icons/gmail.png" class="w-1/2" alt="">
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-100 my-10">
+
+        <section id="about" class="py-12 md:py-20 max-w-4xl mx-auto px-4 sm:px-0"> 
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">My short story</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                
+                <div class="lg:sticky top-40 self-start">
+                    <img class="w-full rounded-xl" src="images/home/hrishi.png" alt="Hrishikesh H. Pillai">
+                </div>
+
+                <div>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        I started my journey with robotics a decade ago with a robotic development kit gifted by my parents in 2014. That early spark of curiosity grew as I explored IoT and smargrids during my school years. Later on during my undergraduate studies, I went onto develop protocols for IoT systems, do research on bio-signal based control for robotic rehabilitation systems and building learning based navigation and control for planetary rovers.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Currently I'm doing my research on representation learning for speech and audio signals, and pre-training and post-training large audio-language models at LEAP Lab, IISc Bangalore, India.
+                    </p>
+
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8">My Experience</h3>
+                        
+                        <div class="space-y-8">
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2023 – Now</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Junior Research Fellow</h4>
+                                    <p class="text-gray-600">Indian Institute of Science Bangalore, India</p>
+                                </div>
+                            </div>
+
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2024</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Research Intern</h4>
+                                    <p class="text-gray-600">BART Lab, Mahidol University Thailand</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2023</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">IEEE CSS SBC CET Chariperson</h4>
+                                    <p class="text-gray-600">IEEE CSS SBC CET Chariperson</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2023</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Intern</h4>
+                                    <p class="text-gray-600">TrEST Research Park</p>
+                                </div>
+                            </div>
+
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2022</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Arduino User Groups Organiser Kerala</h4>
+                                    <p class="text-gray-600">Phorena</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2022</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Project Head RoboCET</h4>
+                                    <p class="text-gray-600">Guided students in robotics projects, conducted workshops and hands on sessions on robotics, IoT, LoRa, programming and development platforms.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2021 - 2022</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Design Intern at CETAA</h4>
+                                    <p class="text-gray-600">Graphics design and content creation at CETAA, alumni association of College of Engineering Trivandrum.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class="w-1/3 md:w-1/4">
+                                    <p class="font-medium text-gray-700">2021 - 2022</p>
+                                </div>
+                                <div class="w-2/3 md:w-3/4">
+                                    <h4 class="font-semibold text-gray-900">Network Intern</h4>
+                                    <p class="text-gray-600">Phorena</p>
+                                </div>
+                            </div>
+
+
+
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-100 my-10">
+        
+
+        <section id="contact" class="py-12 md:py-20 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-8">Contact</h2>
+            <p class="text-gray-600 mb-4 leading-relaxed text-center">
+                mail2hrishikeshhpillai@gmail.com
+            </p>
+        </section>
+    </main>
+
+<footer class="border-t border-gray-300/40">
+<div class="max-w-6xl mx-auto px-6 py-4 flex flex-row items-center justify-between text-gray-500 text-sm">
+    <div class="mb-2 md:mb-0">
+    © 2025 Hrishikesh H Pillai
+    </div>
+    <div class="flex space-x-4">
+    <a href="#contact" class="hover:text-gray-700 transition">Contact</a>
+    </div>
+</div>
+</footer>
+</body>
+</html>
